@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>    
+
+    <body>
+        <header>
+            <div class="caja" > <!--Aqui creamos un bloque para para trabajar con nuestros logo y con (HOme, prod y cont)-->
+                
+                <!--(Alt) se usa al lado de las imagenes, para ofrecer una descripcion de la misma-->
+                <h1><img src="imagenes/logo.png" alt="Logo de la Barbería Alura"></h1> <!--Aui usamos el tag-equiteca H1 para darle importandcia
+                    al logo del encabezado porque sera la parte principal de la pagina -->
+                    <nav> <!--(Nav)sirve para colocar paneles de navegacion (solo en HTML5)-->
+                   
+                        <ul>
+                            <li><a href="index.html" >Home</a></li> <!--Tag-Etiqueta (A-anchor) crea un vinculo o links a otras paginas de internet-->
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="contacto.html">Contactos</a></li>
+                        </ul>   
+                    </nav> 
+
+            </div>
+        
+        </header>
+
+        <main>
+            <form> <!--(Form) Fomulario, dentro del formulario colocamos un Tag-etiqueta que se llama INPUT-->
+                <label for="nomreapellido">Nombre y Apellido</label><!--Cada vez que colocamos una etiqueta de Input tiene que 
+                    ir un (Label) asociado para indicar a que se refiere ese input -->
+                <input type="text" id="nomreapellido" class="input-padron" required> <!--Lo que hace el Input es crear una caja de texto-->
+                    <!--Como buena practica los nombre de variables (ID) usamos unicamente nombres en minuscula-->
+                
+                <label for="correoelectronico">Correo Electrónico</label>    
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                    <!--VER LINEA 55-->
+                 <label for="telefono">Teléfono</label>   
+                 <input type="tel" id="telefono" class="input-padron" required placeholder="809/123-4567"> <!--(Placeholder) mensaje que sale en la caja, para que el usuario tenga un ejemplo de que debe colocar-->
+                    <!--(Required) campo de llenado obligatorio-->
+                 <label for="mensaje">Mensaje</label>
+                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset> <!--(Fieldset) etiqueta para agrupar contenidos del mismo tipo. Pero esta etiqueta no usa (P) para colocar texto sino (Legend)-->
+
+                    <legend>¿Como le gustaría que lo contactemos?</legend>
+                    <!--(Legend) Tag de contenido, se parace al (P)-->
+                        <!--(input-radio) lo que hace es crearos la opcion de seleccion-->
+                        <!--Aqui cambiamos la configuacion que teniamos y colocamos el (input) dentro del (label)) LO TENIAMOS COMO A CONTINUACION
+                        <label for="radio-email">Email</label>
+                        <input type="radio" name="contacto" value=email id="radio-email"-->
+
+                        <!--Lo colocamos asi porque en la configuracion del CSS el (display)esta Block, provocando que los input ocupen toda la linea, asi que subimos a la lineas (input-padron)32-44 y pusimos una clase a cada uno  -->
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>   
+                                                    
+                            <!--(name"contacto") lo que hace es que limita la cantidad de selecciones a uno de los elementos (email, telefono o whatsapp)en la pagina-->
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                            Teléfono</label>   
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"  id="radio-whatsapp"checked>Whatsapp</label>   
+                        
+                </fieldset>
+                 
+                <fieldset> <!--(Fieldset) etiqueta para agrupar contenidos del mismo tipo. Pero esta etiqueta no usa (P) para colocar texto sino (Legend)-->
+
+                        <legend>¿En cual horario prefiere ser atendido?</legend>
+                        <!--(Legend) Tag de contenido, se parace al (P)-->
+                        <select> <!--Aqui colocamos el menu de seleccion de horario en la pagina-->
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                </fieldset>       
+
+                <label class="checkbox"><input type="checkbox"checked>Le gustaría recibir notificaciones de la Barbería Alura?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar"> <!--Este (Submit) es quien crea el boton enviar (NO LLEVA LABEL)-->
+                            
+            </form>
+
+            <table>
+                <thead><!--Asi como dividimos nuestro html, en head, body y footer una TABLA tambien se puede dividir con (THEAD) (T) de table y (Head) de encabezado -->
+                    <tr> 
+                        <th>Día</th> 
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td><!--(TR) lineas-->
+                        <td>08am - 10pm</td><!--(TD) columnass-->
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08am - 10pm</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de la Barbería Alura">
+            <!--(Alt) se usa al lado de las imagenes, para ofrecer una descripcion de la misma-->
+            <p class="copyright">&copy Copyright Barbería Alura - 2024</p>
+        </footer>
+       
+    </body>
+</html>

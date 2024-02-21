@@ -1,0 +1,61 @@
+/* En CSS las notas se escriben igual que en Javascript */
+/* En html podemos intrucir toda la configuraciones del CSS, pero la mejor practica es colocarlo e
+de manera individual.
+Tambien otra buena practica es tener toda nuestra estructura de configuracion de igual manera que 
+en HTML, las configuraciones de primero- en primero)
+*/
+
+
+.titulo-principal{
+    padding-left: 30px; /*padding se usa para colocar espaciamiento, aqui modificamos el primer titulo de la pagina*/
+}
+
+#banner{
+    width: 100%; /* width con esto colocar el espacio de nuestra imagen en la pagina*/
+}
+
+.principal{   /* Aqui estoy modificando las LISTAS NO (UL) ordenadas (lineas 37-47) y le pusimos el fondo
+    plateado a la pagina    */
+    background:#CCCCCC;
+    padding: 20px; /* con esto le dimos un espaciamiento a la primera seccion   */
+}
+
+.titulo-centralizado{
+    text-align: center;
+    
+}
+
+p{
+    text-align: center;
+    
+}
+
+em strong{   /* selector de  (ETIQUETAS) aqui tenemos dos etiquetas (EM-cursiva) y (STRONG-negrita) 
+    y nos estamos REFIRIENDO EXPECIFICAMENTE a esta parte del body en el html   */
+    color: red; /* a esas ETIQUETAS le configuramos el color rojo */
+}
+
+#mision{        /* selector de ((ID)IDENTIFICADORES) empiezan con (#)    */
+    font-size: 20px; /* tamano de la letra  */
+}
+
+.diferenciales{         /* selector de (CLASES) empieza con (.)        */
+    background: #ffffff; /* Aqui estoy modificando las LISTAS NO (UL) ordenadas (lineas 50-65) */
+    padding: 30px; /* con esto le dimos un espaciamiento a la segunda seccion   */
+}
+
+
+.items{   /* Aqui estoy modificando las LISTAS NO (UL) ordenadas (lineas 59-62)        */
+    font-style: italic;
+}
+
+ul{
+    display: inline-block; /* con (inline-block) configuramos nuestra lista para que solo ocupa una 
+    parte de la pagina y asi poder colocar algo al lado, en este caso una imagen    */
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imagenDiferenciales{
+    width: 50%; /* width con esto colocar el espacio de nuestra imagen en la pagina*/
+}

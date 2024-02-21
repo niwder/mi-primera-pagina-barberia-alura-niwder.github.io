@@ -1,0 +1,496 @@
+Sobre la Barbería Alura
+Ubicada en el corazón de la ciudad, la Barbería Alura trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. 
+Nuestra misión es: "Proporcionar autoestima y calidad de vida a nuestros clientes".
+Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.
+
+
+ ¿Existe diferencia entre las etiquetas de HTML?
+
+Sí, cada etiqueta tiene una responsabilidad y un significado
+
+¡Alternativa correcta! Las etiquetas son semánticas y para cada una de ellas tenemos un significado y un resultado diferente.
+
+===================================
+
+Para que tengamos una frase con este resultado final:
+
+Frase de ejemplo
+
+¿Cómo debe ser la marcación de nuestro HTML?
+
+<strong>Frase de <em>ejemplo</em></strong>
+
+
+¡Alternativa correcta! Primero hacemos una marcación de destaque (negrito) en toda la frase y una marcación de énfasis (itálico) en la palabra ejemplo.
+
+===============================
+
+DOCTYPE. ¿Cuál es su función?
+
+Pasar informaciones para el navegador sobre cuál versión de HTML estamos usando
+
+
+¡Alternativa correcta! La etiqueta DOCTYPE sirve para informar al navegador cuál versión de HTML estamos usando.
+
+=========================
+
+¿Por qué es importante usar la etiqueta <meta charset=”UTF-8”>
+
+Para que todos los usuarios vean la página web con el diccionario correcto, respetando acentos y caracteres especiales propios de algunos idiomas como español y portugués.
+
+
+¡Alternativa correcta! Es necesario informar al navegador que estamos usando un diccionario específico que contiene caracteres especiales propios de varios idiomas populares en el mundo, siendo nuestra lengua española uno de ellos, ya que contiene acentos y la letra ñ por ejemplo.
+
+=================================
+
+¿Cuál es la diferencia de colocar informaciones en el head y en el body?
+
+Se acostumbra colocar las etiquetas de contenido en el body y las etiquetas de información en el head
+
+
+¡Alternativa correcta! Como buena práctica de programación se acostumbra estructurar el HTML colocando las informaciones que queremos pasar para el navegador en el head y las etiquetas de contenido en el body
+
+=======================================
+
+¿Cuál es la sintaxis correcta para separar la propiedad y su valor en el CSS?
+
+El carácter ":" (text-align: center)
+
+
+¡Alternativa correcta! El carácter : sirve para atribuir un valor a una propiedad.
+
+================================
+
+¿Cómo funciona el estilo en cascada en el CSS?
+
+Todo lo que adicionamos en el elemento padre es reflejado en los elementos hijos.
+
+
+¡Alternativa correcta! Su nombre lo dice Cascade Sheet Style (Hojas de estilo en cascada), por lo tanto, a medida que la cascada va descendiendo, todo aquello que hacemos en el elemento padre, refleja en el elemento hijo.
+
+============================
+
+¿De qué manera podemos representar colores en el CSS?
+
+Hexadecimal, RGB y con los nombres de los colores
+
+
+¡Alternativa correcta! Podemos representar el color rojo con el nombre red, el hexadecimal #FF0000 y el RGB rgb(255,0,0).
+
+=========================================
+
+¿Cómo hacemos para adicionar una imagen en el contenido de nuestra página?
+
+<img src="direccion">
+
+
+¡Alternativa correcta! La etiqueta img tiene la propiedad src, donde adicionamos la dirección.
+
+======================================
+
+¿Cuál es la propiedad que usamos para alterar la anchura del elemento?
+
+Alternativa correta
+width
+
+
+¡Alternativa correcta! La propiedad width es la que debemos manipular para alterar la anchura del elemento.
+
+========================================
+
+Dada la siguiente lista:
+
+Ítem amarillo
+Ítem verde
+Ítem rojo
+¿Cuál sería la estructura HTML para crearla?
+
+<ul>
+<li>Ítem amarillo</li>
+<li>Ítem verde</li>
+<li>Ítem rojo</li>
+</ul>
+
+¡Alternativa correcta! La etiqueta para usar listas no ordenadas es <ul>, y cada ítem de la lista necesita ser marcado por un <li>
+
+================================================
+
+¿Cómo crear varios bloques de contenido en el HTML?
+Bloques de código dentro de varios <div>
+
+
+¡Alternativa correcta! La etiqueta div es la etiqueta específica para dividir el contenido en bloques, ayuda en la organización y estructuración de nuestro HTML.
+
+======================
+
+¿Cuándo debemos usar una class en nuestro código?
+
+Cuando queremos repetir el estilo CSS en varios elementos.
+
+
+¡Alternativa correcta! Cualquier elemento o etiqueta puede tener una class.
+
+============================================
+
+¿Qué etiqueta usamos cuando queremos crear un encabezado en la página?
+
+header
+
+
+¡Alternativa correcta! La etiqueta header es una etiqueta de contenido de HTML que nos permite crear el encabezado de nuestra página web. Recuerda no confundir la etiqueta head con header.
+
+========================================
+
+Dadas las siguientes etiquetas de HTML:
+
+1) <!DOCTYPE>
+
+2) <html>
+
+3) <head> y <body>
+
+En la estructura de una página HTML, ¿cuál de las etiquetas de arriba no es necesaria?
+
+Todas las etiquetas mencionadas son necesarias
+
+
+¡Alternativa correcta! Todas las etiquetas mencionadas son fundamentales en la estructura de una página.
+
+=======================
+
+¿Cómo podemos destacar el logo de nuestro sitio web? Elige, de las opciones abajo, la alternativa correcta 
+que hace que la imagen del logo destaque, usando las etiquetas de título h1.
+
+
+<h1>
+    <img src="">
+</h1>
+
+¡Alternativa Correcta! La etiqueta <h1> envuelve la etiqueta de imagen, que es donde buscamos el contenido que será expuesto.
+
+===================================================
+
+En el último video, conocimos la etiqueta <a>. ¿Para qué sirve?
+
+Para marcar un vínculo o enlace para otro punto en internet.
+
+
+¡Alternativa Correcta! La etiqueta <a> sirve justamente para colocar un link, que nos va a llevar a otro punto en internet.
+
+==================================
+
+¿Cuál es la propiedad que usamos para poner el contenido del texto en mayúscula?
+
+text-transform: uppercase
+
+
+¡Alternativa Correcta! La propiedad text-transform es la responsable de la transformación del texto a mayúscula, cuando usamos el valor uppercase.
+
+=====================================
+¿Por qué necesitamos quitar los estilos con el reset.css que el navegador crea automáticamente?
+
+Para que nuestro estilo creado no sea influenciado por el estilo que el navegador agrega por defecto.
+
+
+¡Alternativa Correcta! El navegador crea el estilo para todas las etiquetas que considera adecuadas, entonces, necesitamos moverlo para que el estilo que creemos no sea influenciado por el estilo que el navegador agregue.
+
+============================================
+
+¿Para qué sirve el posicionamiento absolute?
+
+Para cambiar la posición del punto inicial donde se encuentra el elemento.
+
+
+¡Alternativa Correcta! Con la position: absolute, yo puedo posicionar mi elemento en cualquier lugar de la página.
+
+=========================================
+
+¿Cuál es la mejor técnica para alinear una div al centro?
+
+Usar el cálculo de margin automático
+
+
+¡Alternativa Correcta! Delegamos para que el navegador haga la cuenta al calcular la largura restante, dividir entre dos y agregar la mitad en cada uno de los lados.
+
+=========================================
+
+¿Por qué debemos usar las etiquetas semánticas, como <main>?
+
+Para dejar el código más legible, tanto para nosotros, como para el navegador.
+
+
+¡Alternativa Correcta! Las etiquetas semánticas hacen que el navegador entienda mejor nuestro contenido, y con eso cargue mejor nuestra página.
+
+========================================
+
+Cuando tengo una lista con ítems complejos, ¿cuál es el formato correcto?
+
+<li>
+    <h2>Cabelo</h2>
+    <p>R$ 40,00</p>
+</li>
+
+¡Alternativa Correcta! Un ítem de la lista, en una lista compleja, puede tener cualquier tipo de contenido.
+
+===========================================
+
+Cómo se comporta un elemento que tiene su display con el valor inline-block?
+
+Pudiendo ajustar el tamaño de su contenido, dejándolo regulable.
+
+
+¡Alternativa Correcta! El tamaño puede ser ajustado, tanto en la largura, como en la altura.
+
+==========================================
+
+¿Cuál es el comportamiento del elemento cuando agrego espaciamiento interno, el padding?
+
+El elemento aumenta su tamaño.
+
+
+¡Alternativa Correcta! El elemento aumenta su tamaño. Cuando declaro que existe un espaciamiento interno, estoy aumentando el contenido.
+
+=======================================
+
+Cuando agrego la siguiente declaración de borde:
+
+Un borde sólido, con 3 pixeles de ancho, entre el padding y el margin.
+
+
+¡Alternativa Correcta! En la estructura de “cajas” del CSS, un borde queda posicionado entre el padding y el margin.
+
+===========================
+
+¿Cómo usar el CSS para hacer los diseños de las esquinas redondeadas de los bordes?
+
+Usando la propiedad border-radius.
+
+
+¡Alternativa Correcta! Con la propiedad border-radius, podemos diseñar la esquina redondeada de los elementos.
+
+==========================
+
+¿A qué elementos puedo cambiar su aspecto a través de su comportamiento con CSS?
+
+A todos los elementos.
+
+
+¡Alternativa Correcta! En todos los elementos de HTML puedo mapear el comportamiento con CSS y cambiar el aspecto del elemento.
+
+=================================
+
+¿Cuándo podemos usar el comportamiento del hover en un elemento?
+
+Cuando queremos resaltar alguna característica en el momento en que el mouse del usuario esté por encima del elemento.
+
+
+¡Alternativa Correcta! En el hover, mapeamos el comportamiento del mouse por encima del elemento, y podemos usar esto para descartar visualmente el elemento.
+
+============================
+
+¿Cómo agregamos una imagen de fondo en un elemento?
+
+Con el valor url en el background del elemento.
+
+
+¡Alternativa Correcta! En el CSS, cuando hacemos referencia a la dirección de una imagen, usamos el valor url.
+
+======================================
+¿Qué tipo de caracteres especiales podemos usar en nuestro texto?
+
+Podemos usar cualquier carácter del Unicode.
+
+
+¡Alternativa Correcta! Los caracteres Unicode están disponibles para ser usados como un complemento a nuestro texto.
+
+====================================
+
+Para decidir cuándo debemos utilizar un formulario en nuestras páginas, se pueden analizar algunos motivos:
+
+1) Cuando queremos enviar datos a un servidor
+
+2) Cuando queremos capturar información que el usuario escribe
+
+3) Cuando queremos enviar los datos a otra página
+
+¿Cuáles realmente se pueden tener en cuenta?
+
+Seleccione una alternativa
+
+Todos los motivos pueden ser tomados en cuenta
+
+
+¡Alternativa correcta! Un formulario puede servir, entre otras cosas, para enviar datos a otra página, capturar información que el usuario escribe y enviar datos a un servidor.
+
+=====================================
+
+¿Cuál es la etiqueta que usamos para emparejar un input, para tener un título para la entrada de datos?
+
+<label>
+
+
+¡Alternativa correcta! La etiqueta <label> es una etiqueta para la entrada de datos para el <input>.
+
+============================================
+
+¿Qué propiedad debo cambiar para que mi <input> tenga un espacio entre el borde y el contenido?
+
+Seleccione una alternativa
+padding
+
+¡Alternativa correcta! La propiedad padding sirve para cambiar el espaciado interno, entre el contenido y el borde.
+
+================================
+
+¿Cuál es la propiedad de un input del tipo radio que necesito crear para que todos los elementos formen parte del mismo grupo?
+
+name
+
+
+¡Alternativa correcta! La propiedad name solo se puede “completar” una vez, es por eso que, cuando seleccionamos uno de los ítems, se anula el otro, manteniendo solamente uno seleccionado.
+
+================================
+
+¿Cuál es el mejor enfoque cuando tenemos una configuración de CSS aplicada a un ítem y queremos replicarla en un ítem similar?
+
+Selecciona 2 alternativas
+
+Crear una clase
+
+
+¡Alternativa correcta! Cuando tenemos un estilo que puede ser repetido, una buena estrategia es extraer eso a una clase y usar la clase para aplicar esos estilos en nuestros elementos.
+
+Usar selectores de ítems separados por coma
+
+
+¡Alternativa correcta! Esta es una forma sencilla de hacer que la misma configuración de CSS funcione para los dos ítems, ya sean selectores de elementos, de ids o de clases.
+
+========================================
+
+Considerando el código de abajo:
+
+<p class="parrafo">
+
+p {
+    color: blue;
+}
+
+p.parrafo {
+    color: red;
+}
+
+.parrafo {
+    color: purple;
+}
+
+red
+
+
+¡Alternativa correcta! El selector p.parrafo es el más fuerte, y el color aplicado es el rojo (red).
+
+==========================================
+
+En el último video, se vio la etiqueta <option>. ¿Cuál es su utilidad?
+
+Para crear los ítems seleccionables de un <select>
+¡Alternativa correcta! La estructura de la etiqueta <select> está compuesta de uno o más <option>.
+
+===============================
+
+
+¿Por qué motivos es importante usar los tipos correctos de <input> para los usuarios que acceden a la página vía celular?
+
+Para tener datos más correctos en el formulario
+
+
+¡Alternativa correcta! Es mucho mejor tener datos correctos cuando tenemos nuestro formulario completo.
+
+Alternativa correta
+Para facilitar la vida del usuario
+
+
+¡Alternativa correcta! Es extremadamente importante facilitar la vida de nuestros usuarios siempre.
+
+==============================================
+
+
+¿Cómo convertimos un campo común en un campo obligatorio?
+
+Agregando la propiedad required
+
+
+¡Alternativa correcta! Cuando agregamos la propiedad required, el navegador nos ayuda a validar si ese campo está rellenado.
+
+======================================
+
+¿Qué etiqueta usamos para marcar un título de un grupo de campos en el formulario?
+
+Seleccione una alternativa
+
+<legend>
+
+
+¡Alternativa correcta! Es la etiqueta <legend> que usamos para un título de un grupo de campos en cualquier formulario.
+
+=====================================
+
+¿Cómo configurar la transición visual de un elemento que dura 3 segundos?
+
+transition: 3s;
+
+¡Alternativa correcta! Utilizamos la propiedad transition para proporcionar una transición visual de un elemento.
+
+======================================
+
+¿Qué propiedad del CSS usamos para aumentar un elemento proporcionalmente?
+
+transform: scale()
+
+¡Alternativa correcta! Utilizamos la propiedad transform: scale() para aumentar un elemento proporcionalmente.
+
+=========================================
+
+¿Qué etiqueta uso para crear filas en una tabla?
+
+<tr>
+
+
+¡Alternativa correcta! Utilizamos la etiqueta <tr> para marcar la fila de una tabla.
+
+====================================
+
+¿Cómo dividir una tabla de una forma más semántica?
+
+Usando las etiquetas <thead>, <tbody> y <tfoot>
+
+
+¡Alternativa correcta! Las etiquetas <thead>, <tbody> y <tfoot> ayudan a dejar el contenido de la tabla más dividido y más semántico.
+
+=================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,333 @@
+/*ID, Class o tags-etiquetas
+
+#miID (ID comienza con #) Sintaxis: Selecciona un elemento específico por su ID único.
+.miClase (CLASE empieza con punto(.)) Sintaxis: Selecciona todos los elementos que tienen una clase específica.
+P {} (TAG-Etiqueta se coloca directamente) Sintaxis: Selecciona todos los elementos con una etiqueta específica.
+
+GERARQUIA (iNLINE = 1000, ID = 100, CLASS = 10, TAG = 1)
+
+*/
+
+body{
+  font-family: "Montserrat", sans-serif;
+ }
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /* espaciamiento de 20px superior e inferior y 0 en los laterales    */
+}
+
+.caja{
+    width: 940px;
+    position: relative; /*      */
+    margin: 0 auto;  /*      */
+}
+
+nav{     /* Aqui estamos moviendo (home, prod y cont hacia una posicion en la pag    */
+    position: absolute; /* Position; con esta propiedad podemos colocar nuestros elementos en la posicion que querramos en las paginas  */
+    top: 110px; 
+    right: 0;
+}
+
+nav li{
+    display: inline; /* Aqui pongo de manera horizontal la lista (Home, prod y contacto) en la pagina y
+    pusimos que estos elementos ocupan el 100% de la pagina */
+    margin: 0 0 0 15px; /* margen interno, aqui modificamos 4 parametros (arriba=0) (derecha=0) 
+    (abajo=0) (izquierda=15px)   */
+
+}
+
+
+
+nav a{
+    text-transform: uppercase; /* Aqui estamos poniendo en mayuscula todo el contenido del tag-etiqueta (a) linea 17-19   */
+    color: black; /* #000000 otra forma de hacerlo  */
+    font-weight: bold; /*negrita*/
+    font-size: 22px;
+    text-decoration: none; /* Aqui quitamos el subrayado por defecto que el navegador coloca cuando se trata de vinculos   */
+}
+/* aqui voy a trabajar sobre el Navegador (home, productos y contacto  */
+nav a:hover{ /*con la propiedad (HOVER) en CSS, captura el movimiento del mouse, cuando paso por encima de algo me ejecuta una accion   */
+    color: #c78c19; /* aqui cuando capturamos el movimiento nos coloca las letras con un color  */
+    text-decoration: underline; /* aqui cuando capturamos el movimiento nos coloca las letras subrayadas  */
+}
+
+
+.productos{
+    width: 940px;
+    margin: 0 auto;  /*      */
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background-color:#CCCCCC ; /*este solo lo usamos para verificar los espacios, por eso lo quitamos, cuando ya verificamos   */
+    margin: 0 1.5%; /* 0 en la vertical y 1.5% en los laterales */
+    padding: 30px 20px ;
+    box-sizing: border-box;
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style:solid ; Debajo una forma simpliicado de estos 3*/
+    border: 2px solid #000000;
+    border-radius: 10px ;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{ /* Active se usa para capturar el click    */
+    border-color:#088c19 ;
+    
+}   
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold ;
+    vertical-align: top;
+
+}
+/* Como hicimos un selector expecifica para h2 y le colocamos un font-size de 30px, el sistema le da prioridad
+a esta parte y no puede cambiarme el tamano de las letras como lo quiero hacer con el HOVER
+  Asi que tenemos que hacer un selector de clase que sea del mismo nivel (productos li:hover h2) */
+.productos li:hover h2{
+    font-size: 33px; 
+    /* aqui cuando capturamos el movimiento nos coloca las letras con un poco mas grandes  */
+}
+
+.producto-descripcion{
+    font-size: 18px;
+
+}
+
+.producto-precio{
+    font-size: 20px ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg); /* El background ocupa todo el ancho de la pantalla   */
+    padding: 40px;
+
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*
+main{
+   /* width: 940px;  una pantalla padron tiene 1270 pixles y una buena practica es usar 940px    
+    margin: 0 auto; 
+}
+*/
+
+form{
+    margin: 40px 0; /* colocamos 40px pa arriba y para abajo y 0 en los laterales   */
+}
+
+/* A continuacion colocamos en vertical los formularios    */
+
+form label, form legend{ /*aqui aplicamos nuestras configuraciones para varios selectores 
+    (solo lo separamos con una coma (,) con esto logramos darle el mismo estilo al parrafo
+    Como le gustaria que le contactemos?   */
+        display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /*un margen de 0 a la derecho, 0 a la izq y 10 px hacia abajo  */
+}    
+/* Recordando que tenemos la propiedad display y hay elementos de HTLM que por default vienen display-block, que block es cuando ocupan el 100% de la página, y otros elementos vienen con ese default inline. Inline es cuando ocupan solo su contenido, o sea, el espacio de su contenido dentro de la página.
+En el caso de los elementos de un formulario, todos ellos vienen con inline por default. Es justamente por eso que tenemos este comportamiento. Entonces, lo que haremos será vamos a nuestro archivo y vamos a usar form, en este caso, directamente label, para cada uno de nuestros elementos, form label y display, y al display le vamos a colocar block.
+Vamos a nuestro form input, al elemento input de nuestro form, y hacemos la misma técnica, display block.    */
+
+/*form input, form textarea{*//*aqui aplicamos nuestras configuraciones para varios selectores (solo lo separamos con una coma (,)    */
+.input-padron{   /*selector de clase (input-padron) ver linea 38 en (contacto.html) 
+    con esto logramos colocar el selector antes que cada input (email, telef, whatsapp) */ 
+    display: block;
+    margin: 0 0 20px;  /*un margen de 0 a la derecho, 0 a la izq y 10 px hacia abajo  */
+    padding: 10px 25px; /* colocamos 10px pa arriba y para abajo y 25px en los laterales   */
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px; /* aqui le ponemos border redondeados   */
+    transition: 1s all; /* aqui definimos que tanto tiempo tarta en cambiar de color (HOVER-linea 170-171)   */
+    cursor: pointer; /* aqui cambiamos el puntero del mouse al momento de pasarle por arriba a la caja ENVIAR   */
+
+}
+
+.enviar:hover{ /*ejecutar una accion al momento de pasar por encima de algo   */
+    background: darkorange ;
+    transform: scale(1.2) ; /* aqui aumentamoss la caja Enviar al momento de pasarle por arriba a la caja ENVIAR   */
+
+}
+
+table{
+    margin: 40px 40px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+
+}
+
+td, th{
+    border: 1px solid #000000;  
+    padding: 8px 15px;
+
+}
+/*Aqui inicia CSS para nuestra HOME*/
+
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;    
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* (2EM) le decimos al sistema que el tamano de la fuente sea dos veces el tamano por defecto del navegador*/
+    margin: 0 0 1em;
+    clear: left; /* Cualquier configuration que venga despues del titulo-izquierda que no lo aplique al titulo */
+}
+
+/*
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+
+.titulo-principal:before{
+    content: "["
+}
+
+.titulo-principal:after{
+    content: "]"
+}
+
+p:first-line{
+    font-style: italic;
+}
+*/
+
+.principal p{
+    margin: 0 0 1em;
+
+}
+
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left; /* (FLoat) para colocar una imagen al lado del texto*/
+    margin: 0 20px 20px 0; /*arriba, derecha, abajo e izq  */
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content:"☆";
+}
+        /*last-child y ntf-child(3) tenemos estas otras variantes para el ultimo de la lista o para seleccionar uno de la lista */
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px -10px 30px 15px #000000; /* ubicacion de la sombra en el eje horizontal, 
+    ubicacion de la sommbra eje vertical (en negativo para que vaya hacia arriba), difuminacion es 
+    3er parametro, 4t0 spread (expansion) 
+       */
+    
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+/* Esta parte nos permite trabjar con execiones, para cuando se cumpla una condicion empezar a trabajar con algo difrente
+
+Aqui dicemos que si encuentras una pantalla con 480px haga algo*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal,.mapa-contenido,.contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
